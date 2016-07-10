@@ -1,0 +1,16 @@
+elif index > 0:
+    ''' if the invoicetype is tpn then add to the current invoice
+        until the program changes'''
+    if row['invoicetype' == 'tpn']:
+        ''' if the program of the current row is the same as the
+            program of the previous row then add to the current
+            invoice'''
+        if row['program'] == reader[index - 1]['program']
+            current_invoice.append(row)
+
+
+            ''' if it's past the 1st index and the invoicetype and program of
+                the current row is the same as the invoicetype and program of
+                the previous row'''
+            else:
+                print 'Not yet Implemented!'
