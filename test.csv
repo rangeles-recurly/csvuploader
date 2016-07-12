@@ -1,8 +1,8 @@
-name,age,eyecolor,location,program,invoicetype,invoicegroup
-Rion,28,brown,SF,p1,tpn,1
-Chris,31,brown,SF,p1,tpn,1
-Chris,31,brown,SF,p5,tpn,2
-James,27,black,SF,p2,mtom,3
-Jesse,25,blonde,SF,p3,mtom,3
-Alex,25,blonde,SF,p3,mtom,3
-Sam,27,blonde,SF,p4,mtom,4
+influencerfirstname,influencerlastname,customername,programname,postedat,amountdue,invoicegroup
+Rion,Angeles,tpn,program,2016-05-03 20:00:03 UTC,101,1
+Chris,Wilson,tpn,program,2016-05-03 20:00:03 UTC,102,1
+Chris,Edwards,tpn,program,2016-05-03 20:00:03 UTC,103,2
+James,Wissel,mtom,program,2016-05-03 20:00:03 UTC,104,3
+Jesse,Anderson,mtom,program,2016-05-03 20:00:03 UTC,105,3
+Alex,Winston,25,mtom,program,2016-05-03 20:00:03 UTC,106,3
+Sam,Payson,27,mtom,program,2016-05-03 20:00:03 UTC,107,4

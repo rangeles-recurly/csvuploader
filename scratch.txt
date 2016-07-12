@@ -1,0 +1,1 @@
+# logger.info('Adding charge to: %s %s %s %s %s %d' % (row['influencerfirstname', row['influencerlastname'], row['customer'], row['programname'], row['postedat'], row['amountdue']))

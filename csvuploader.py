@@ -6,30 +6,40 @@ Python Version 2.7.11
 This Script processes a CSV file and creates invoices
 '''
 
-import sys, csv, logging
+import sys, csv, logging, recurly
 from logging.handlers import RotatingFileHandler
 
 # name of csv file to be passed as argument
 csv_file = sys.argv[1]
 log_level_desired = sys.argv[2]
 
-api_key = 'blah'
+# recurly specific stuff
+recurly.SUBDOMAIN = 'YOUR-SUBDOMAIN'
+recurly.API_KEY = 'abcdef01234567890abcdef01234567890'
+
+# Set a default currency for your API requests
+recurly.DEFAULT_CURRENCY = 'USD'
 
 def authenticate():
-    print 'wow!'
-    # TODO place authentication code here
+    logger.info('Attempting to Authenticate')
+    # recurly specific stuff
+    recurly.SUBDOMAIN = 'https://justdate.recurly.com'
+    recurly.API_KEY = '70c38822639f49f1a17e167eb8876682'
+
+    # Set a default currency for your API requests
+    recurly.DEFAULT_CURRENCY = 'USD'
 
 def process_csv(csv_to_process = csv_file):
     '''A function that Processes the CSV file passsed as an argument using
         a DictReader'''
 
-    logger.debug('We have a problem! OMG')
+    logger.info('Beginning to Process CSV: %s' % csv_to_process)
 
     # get the number of rows first
     file = open(csv_to_process)
     # subtract 1 for the header of column names
     row_count = len(file.readlines()) - 1
-    print row_count
+    logger.info('CSV file opened has %d rows to process.' % row_count)
 
     # open the CSV
     with open(csv_to_process, mode = 'rb') as opened_csv:
@@ -50,12 +60,11 @@ def process_csv(csv_to_process = csv_file):
                 current_invoice.append(row)
                 # save the row to the previous_row variable to be used next
                 previous_row = row
-                print 'index: ' + str(index)
-                '''elif index == total_rows - 1:
-                    print 'last record, posting final invoice'
-                    # TODO Post invoice
-                    print 'Invoice Posted'
-                    print current_invoice'''
+                logger.info(('Adding charge to: {} {} {} {} {} {} '
+                    'Invoice Group: {}').format(row['influencerfirstname'],
+                    row['influencerlastname'], row['customername'],
+                    row['programname'], row['amountdue'], row['postedat'],
+                    row['invoicegroup']))
             else:
                 ''' if the invoice group of the current row is the same as the
                     invoice group of the previous row then add to the current
@@ -70,6 +79,11 @@ def process_csv(csv_to_process = csv_file):
                         current_invoice.append(row)
                         print ('Not eof adding another adjustment to the '
                                'current Invoice')
+                        logger.info(('Adding charge to: {} {} {} {} {} {} '
+                            'Invoice Group: {}').format(row['influencerfirstname'],
+                            row['influencerlastname'], row['customername'],
+                            row['programname'], row['amountdue'], row['postedat'],
+                            row['invoicegroup']))
                         print 'index: ' + str(index)
                         previous_row = row
 
@@ -100,29 +114,56 @@ def process_csv(csv_to_process = csv_file):
                         print current_invoice
                         previous_row = row
 
+def retrieve_account(account_code):
+    # TODO retrieve account
+    try:
+      account = Account.get(account_code)
+      return account
+    except NotFoundError:
+      logger.warning(('Account Not Found: {}').format(row['customername']))
+      return False
 
+def add_adjustment(account, description, unit_amount_in_cents, quantity,
+    accounting_code, tax_exempt):
+    ''' a function that adds charges to accounts'''
+    charge = Adjustment(
+      description = description,
+      unit_amount_in_cents = unit_amount_in_cents,
+      currency = 'USD',
+      quantity = quantity,
+      accounting_code = accounting_code,
+      tax_exempt = tax_exempt)
 
-def add_adjustment():
-    # TODO place adjustment code here
-    print 'wow!'
+    account.charge(charge)
 
-def post_invoice():
-    # TODO place post Invoice code here
-    print 'wow!'
+def post_invoice(account, terms_and_conditions = None, customer_notes = None,
+    collection_method = 'automatic', net_terms = 30, po_number = None):
+    ''' a function that posts the invoice with all charges on account '''
+
+    # invoice() takes invoice attributes as optional kwargs
+    invoice = account.invoice(
+        terms_and_conditions = terms_and_conditions,
+        customer_notes = customer_notes,
+        collection_method = collection_method,
+        net_terms = net_terms,
+        po_number = po_number)
 
 def initiate_logging(log_level = log_level_desired):
     global logger
 
     # set format of log entries
-    formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+    formatter = logging.Formatter('%(asctime)s %(levelname)s %(funcName)s '
+        '%(lineno)d: %(message)s')
 
     ''' get logger and set level designated by user. this is for printing to
         file only'''
-    logger = logging.getLogger('myapp')
-    logger.setLevel(log_level)
+    logger = logging.getLogger('TapInfluence.CSVUploader')
+    logger.setLevel(str.upper(log_level))
 
-    # set name of log file
-    file_handler = logging.FileHandler('example.log')
+    # set name of log file, set to multiple files instead
+    #file_handler = logging.FileHandler('example.log')
+    file_handler = RotatingFileHandler('log_file.log', mode = 'a',
+        maxBytes = 5*1024*1024, backupCount = 2, encoding = None, delay = 0)
 
     # this prints out to console
     console_handler = logging.StreamHandler(sys.stdout)
@@ -138,4 +179,6 @@ def initiate_logging(log_level = log_level_desired):
 
 if __name__ == "__main__":
     initiate_logging()
+    logger.info('***** Starting New Upload ***** %s' % csv_file)
+    authenticate()
     process_csv()
