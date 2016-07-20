@@ -159,3 +159,503 @@
 2016-07-11 10:16:33,655 INFO process_csv 67: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
 2016-07-11 10:16:33,655 INFO process_csv 86: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
 2016-07-11 10:16:33,655 INFO process_csv 86: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 15:39:24,886 INFO <module> 182: 
+***** Starting New Upload ***** test.csv
+2016-07-19 15:39:24,886 INFO authenticate 24: Attempting to Authenticate
+2016-07-19 15:39:24,886 INFO process_csv 36: Beginning to Process CSV: test.csv
+2016-07-19 15:39:24,886 INFO process_csv 42: CSV file opened has 7 rows to process.
+2016-07-19 15:39:24,887 INFO process_csv 67: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 15:39:24,887 INFO process_csv 86: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 15:39:24,887 INFO process_csv 86: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 15:42:42,575 INFO <module> 182: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 15:42:42,575 INFO authenticate 24: Attempting to Authenticate
+2016-07-19 15:42:42,575 INFO process_csv 36: Beginning to Process CSV: test.csv
+2016-07-19 15:42:42,576 INFO process_csv 42: CSV file opened has 7 rows to process.
+2016-07-19 15:42:42,576 INFO process_csv 67: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 15:42:42,576 INFO process_csv 86: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 15:42:42,577 INFO process_csv 86: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 16:05:45,072 INFO <module> 192: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 16:05:45,072 INFO authenticate 24: Attempting to Authenticate
+2016-07-19 16:05:45,073 INFO process_csv 36: Beginning to Process CSV: test.csv
+2016-07-19 16:05:45,073 INFO process_csv 42: CSV file opened has 7 rows to process.
+2016-07-19 16:05:45,073 INFO process_csv 67: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:05:45,074 INFO process_csv 81: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:05:45,074 INFO process_csv 93: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:05:45,074 DEBUG process_csv 95: Index Count: 1
+2016-07-19 16:05:45,074 DEBUG process_csv 96: Saving current row to previous row.
+2016-07-19 16:05:45,074 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 16:05:45,074 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 16:05:45,075 INFO process_csv 81: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:05:45,075 INFO process_csv 93: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 16:05:45,075 DEBUG process_csv 95: Index Count: 4
+2016-07-19 16:05:45,075 DEBUG process_csv 96: Saving current row to previous row.
+2016-07-19 16:05:45,075 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 16:05:45,075 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 16:06:28,768 INFO <module> 192: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 16:06:28,768 INFO authenticate 24: Attempting to Authenticate
+2016-07-19 16:06:28,768 INFO process_csv 36: Beginning to Process CSV: test.csv
+2016-07-19 16:06:28,769 INFO process_csv 42: CSV file opened has 7 rows to process.
+2016-07-19 16:06:28,769 INFO process_csv 67: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:06:28,769 INFO process_csv 81: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:06:28,769 INFO process_csv 93: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:06:28,770 DEBUG process_csv 95: Index Count: 1
+2016-07-19 16:06:28,770 DEBUG process_csv 96: Saving current row to previous row.
+2016-07-19 16:06:28,770 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 16:06:28,770 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 16:06:28,770 INFO process_csv 81: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:06:28,771 INFO process_csv 93: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 16:06:28,771 DEBUG process_csv 95: Index Count: 4
+2016-07-19 16:06:28,771 DEBUG process_csv 96: Saving current row to previous row.
+2016-07-19 16:06:28,771 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 16:06:28,771 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 16:06:43,096 INFO <module> 192: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 16:06:43,096 INFO authenticate 24: Attempting to Authenticate
+2016-07-19 16:06:43,096 INFO process_csv 36: Beginning to Process CSV: test.csv
+2016-07-19 16:06:43,097 INFO process_csv 42: CSV file opened has 7 rows to process.
+2016-07-19 16:06:43,097 INFO process_csv 67: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:06:43,097 INFO process_csv 81: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:06:43,098 INFO process_csv 93: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:06:43,098 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 16:06:43,098 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 16:06:43,098 INFO process_csv 81: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:06:43,098 INFO process_csv 93: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 16:06:43,098 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 16:06:43,099 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 16:06:47,176 INFO <module> 192: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 16:06:47,176 INFO authenticate 24: Attempting to Authenticate
+2016-07-19 16:06:47,176 INFO process_csv 36: Beginning to Process CSV: test.csv
+2016-07-19 16:06:47,176 INFO process_csv 42: CSV file opened has 7 rows to process.
+2016-07-19 16:06:47,177 INFO process_csv 67: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:06:47,177 INFO process_csv 81: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:06:47,177 INFO process_csv 93: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:06:47,177 DEBUG process_csv 95: Index Count: 1
+2016-07-19 16:06:47,178 DEBUG process_csv 96: Saving current row to previous row.
+2016-07-19 16:06:47,178 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 16:06:47,178 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 16:06:47,178 INFO process_csv 81: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:06:47,178 INFO process_csv 93: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 16:06:47,178 DEBUG process_csv 95: Index Count: 4
+2016-07-19 16:06:47,178 DEBUG process_csv 96: Saving current row to previous row.
+2016-07-19 16:06:47,179 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 16:06:47,179 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 16:06:50,761 INFO <module> 192: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 16:06:50,762 INFO authenticate 24: Attempting to Authenticate
+2016-07-19 16:06:50,762 INFO process_csv 36: Beginning to Process CSV: test.csv
+2016-07-19 16:06:50,762 INFO process_csv 42: CSV file opened has 7 rows to process.
+2016-07-19 16:06:50,763 INFO process_csv 67: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:06:50,763 INFO process_csv 81: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:06:50,763 INFO process_csv 93: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:06:50,763 DEBUG process_csv 95: Index Count: 1
+2016-07-19 16:06:50,763 DEBUG process_csv 96: Saving current row to previous row.
+2016-07-19 16:06:50,764 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 16:06:50,764 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 16:06:50,764 INFO process_csv 81: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:06:50,764 INFO process_csv 93: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 16:06:50,764 DEBUG process_csv 95: Index Count: 4
+2016-07-19 16:06:50,764 DEBUG process_csv 96: Saving current row to previous row.
+2016-07-19 16:06:50,764 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 16:06:50,764 INFO process_csv 105: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 16:59:35,804 INFO <module> 213: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 16:59:35,804 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 16:59:35,805 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 16:59:35,805 DEBUG process_csv 38: Testing Mode: True
+2016-07-19 16:59:35,806 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 16:59:35,806 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 16:59:35,806 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:35,806 INFO add_adjustment 168: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:59:35,807 INFO process_csv 85: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:59:35,807 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:35,807 INFO add_adjustment 168: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:59:35,807 DEBUG process_csv 92: Index Count: 1
+2016-07-19 16:59:35,807 DEBUG process_csv 93: Saving current row to previous row.
+2016-07-19 16:59:35,807 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 16:59:35,807 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 16:59:35,808 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:35,808 INFO add_adjustment 168: Adding charge to: Chris Edwards tpn program 103 2016-05-03 20:00:03 UTC Invoice Group: 2
+2016-07-19 16:59:35,809 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 16:59:35,809 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 16:59:35,809 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:35,810 INFO add_adjustment 168: Adding charge to: James Wissel mtom program 104 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 16:59:35,810 INFO process_csv 85: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:59:35,810 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:35,810 INFO add_adjustment 168: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 16:59:35,810 DEBUG process_csv 92: Index Count: 4
+2016-07-19 16:59:35,810 DEBUG process_csv 93: Saving current row to previous row.
+2016-07-19 16:59:35,811 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 16:59:35,811 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 16:59:35,811 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:35,811 INFO add_adjustment 168: Adding charge to: Alex Winston 25 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 106
+2016-07-19 16:59:35,811 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 16:59:35,811 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 16:59:35,811 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:35,812 INFO add_adjustment 168: Adding charge to: Sam Payson 27 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 107
+2016-07-19 16:59:35,812 INFO process_csv 122: No remaining charges, Final invoice posted
+2016-07-19 16:59:50,229 INFO <module> 213: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 16:59:50,229 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 16:59:50,230 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 16:59:50,230 DEBUG process_csv 38: Testing Mode: False
+2016-07-19 16:59:50,230 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 16:59:50,230 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 16:59:50,231 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:50,231 INFO add_adjustment 168: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:59:50,231 INFO process_csv 85: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:59:50,231 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:50,231 INFO add_adjustment 168: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 16:59:50,231 DEBUG process_csv 92: Index Count: 1
+2016-07-19 16:59:50,231 DEBUG process_csv 93: Saving current row to previous row.
+2016-07-19 16:59:50,232 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 16:59:50,232 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 16:59:50,232 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:50,232 INFO add_adjustment 168: Adding charge to: Chris Edwards tpn program 103 2016-05-03 20:00:03 UTC Invoice Group: 2
+2016-07-19 16:59:50,232 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 16:59:50,232 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 16:59:50,233 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:50,233 INFO add_adjustment 168: Adding charge to: James Wissel mtom program 104 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 16:59:50,233 INFO process_csv 85: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 16:59:50,233 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:50,233 INFO add_adjustment 168: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 16:59:50,233 DEBUG process_csv 92: Index Count: 4
+2016-07-19 16:59:50,233 DEBUG process_csv 93: Saving current row to previous row.
+2016-07-19 16:59:50,234 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 16:59:50,234 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 16:59:50,234 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:50,234 INFO add_adjustment 168: Adding charge to: Alex Winston 25 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 106
+2016-07-19 16:59:50,234 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 16:59:50,234 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 16:59:50,235 DEBUG add_adjustment 158: Testing mode: True
+2016-07-19 16:59:50,235 INFO add_adjustment 168: Adding charge to: Sam Payson 27 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 107
+2016-07-19 16:59:50,235 INFO process_csv 122: No remaining charges, Final invoice posted
+2016-07-19 17:00:57,521 INFO <module> 213: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 17:00:57,521 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 17:00:57,521 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 17:00:57,521 DEBUG process_csv 38: Testing Mode: False
+2016-07-19 17:00:57,522 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 17:00:57,522 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 17:00:57,522 DEBUG add_adjustment 158: Testing mode: True, do nothing.
+2016-07-19 17:00:57,522 INFO add_adjustment 168: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:00:57,523 INFO process_csv 85: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:00:57,523 DEBUG add_adjustment 158: Testing mode: True, do nothing.
+2016-07-19 17:00:57,523 INFO add_adjustment 168: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:00:57,523 DEBUG process_csv 92: Index Count: 1
+2016-07-19 17:00:57,523 DEBUG process_csv 93: Saving current row to previous row.
+2016-07-19 17:00:57,523 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 17:00:57,523 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:00:57,523 DEBUG add_adjustment 158: Testing mode: True, do nothing.
+2016-07-19 17:00:57,524 INFO add_adjustment 168: Adding charge to: Chris Edwards tpn program 103 2016-05-03 20:00:03 UTC Invoice Group: 2
+2016-07-19 17:00:57,524 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 17:00:57,524 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:00:57,524 DEBUG add_adjustment 158: Testing mode: True, do nothing.
+2016-07-19 17:00:57,524 INFO add_adjustment 168: Adding charge to: James Wissel mtom program 104 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:00:57,524 INFO process_csv 85: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:00:57,524 DEBUG add_adjustment 158: Testing mode: True, do nothing.
+2016-07-19 17:00:57,525 INFO add_adjustment 168: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:00:57,525 DEBUG process_csv 92: Index Count: 4
+2016-07-19 17:00:57,525 DEBUG process_csv 93: Saving current row to previous row.
+2016-07-19 17:00:57,525 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 17:00:57,525 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:00:57,525 DEBUG add_adjustment 158: Testing mode: True, do nothing.
+2016-07-19 17:00:57,525 INFO add_adjustment 168: Adding charge to: Alex Winston 25 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 106
+2016-07-19 17:00:57,525 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 17:00:57,526 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:00:57,526 DEBUG add_adjustment 158: Testing mode: True, do nothing.
+2016-07-19 17:00:57,526 INFO add_adjustment 168: Adding charge to: Sam Payson 27 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 107
+2016-07-19 17:00:57,526 INFO process_csv 122: No remaining charges, Final invoice posted
+2016-07-19 17:02:37,508 INFO <module> 214: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 17:02:37,508 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 17:02:37,508 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 17:02:37,508 DEBUG process_csv 38: Testing Mode: False
+2016-07-19 17:02:37,509 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 17:02:37,509 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 17:02:37,509 DEBUG add_adjustment 159: Testing mode: True, do nothing.
+2016-07-19 17:02:37,509 INFO add_adjustment 169: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:02:37,510 INFO process_csv 85: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:02:37,510 DEBUG add_adjustment 159: Testing mode: True, do nothing.
+2016-07-19 17:02:37,510 INFO add_adjustment 169: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:02:37,510 DEBUG process_csv 92: Index Count: 1
+2016-07-19 17:02:37,510 DEBUG process_csv 93: Saving current row to previous row.
+2016-07-19 17:02:37,510 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 17:02:37,510 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:02:37,511 DEBUG add_adjustment 159: Testing mode: True, do nothing.
+2016-07-19 17:02:37,511 INFO add_adjustment 169: Adding charge to: Chris Edwards tpn program 103 2016-05-03 20:00:03 UTC Invoice Group: 2
+2016-07-19 17:02:37,511 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 17:02:37,511 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:02:37,511 DEBUG add_adjustment 159: Testing mode: True, do nothing.
+2016-07-19 17:02:37,511 INFO add_adjustment 169: Adding charge to: James Wissel mtom program 104 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:02:37,511 INFO process_csv 85: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:02:37,512 DEBUG add_adjustment 159: Testing mode: True, do nothing.
+2016-07-19 17:02:37,512 INFO add_adjustment 169: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:02:37,512 DEBUG process_csv 92: Index Count: 4
+2016-07-19 17:02:37,512 DEBUG process_csv 93: Saving current row to previous row.
+2016-07-19 17:02:37,512 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 17:02:37,512 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:02:37,512 DEBUG add_adjustment 159: Testing mode: True, do nothing.
+2016-07-19 17:02:37,512 INFO add_adjustment 169: Adding charge to: Alex Winston 25 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 106
+2016-07-19 17:02:37,513 INFO process_csv 102: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 17:02:37,513 DEBUG process_csv 106: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:02:37,513 DEBUG add_adjustment 159: Testing mode: True, do nothing.
+2016-07-19 17:02:37,513 INFO add_adjustment 169: Adding charge to: Sam Payson 27 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 107
+2016-07-19 17:02:37,513 INFO process_csv 122: No remaining charges, Final invoice posted
+2016-07-19 17:09:08,342 INFO <module> 215: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 17:09:08,342 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 17:09:08,342 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 17:09:08,342 DEBUG process_csv 38: Testing Mode: False
+2016-07-19 17:09:08,342 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 17:09:08,343 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 17:09:08,343 DEBUG process_csv 68: Attempting to Add charge: False
+2016-07-19 17:09:08,343 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:09:08,343 INFO add_adjustment 170: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:09:08,343 INFO process_csv 86: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:09:08,344 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:09:08,344 INFO add_adjustment 170: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:09:08,344 DEBUG process_csv 93: Index Count: 1
+2016-07-19 17:09:08,344 DEBUG process_csv 94: Saving current row to previous row.
+2016-07-19 17:09:08,344 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 17:09:08,344 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:09:08,344 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:09:08,345 INFO add_adjustment 170: Adding charge to: Chris Edwards tpn program 103 2016-05-03 20:00:03 UTC Invoice Group: 2
+2016-07-19 17:09:08,345 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 17:09:08,345 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:09:08,345 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:09:08,345 INFO add_adjustment 170: Adding charge to: James Wissel mtom program 104 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:09:08,345 INFO process_csv 86: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:09:08,346 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:09:08,346 INFO add_adjustment 170: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:09:08,346 DEBUG process_csv 93: Index Count: 4
+2016-07-19 17:09:08,346 DEBUG process_csv 94: Saving current row to previous row.
+2016-07-19 17:09:08,346 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 17:09:08,346 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:09:08,346 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:09:08,346 INFO add_adjustment 170: Adding charge to: Alex Winston 25 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 106
+2016-07-19 17:09:08,347 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 17:09:08,347 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:09:08,347 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:09:08,347 INFO add_adjustment 170: Adding charge to: Sam Payson 27 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 107
+2016-07-19 17:09:08,347 INFO process_csv 123: No remaining charges, Final invoice posted
+2016-07-19 17:13:48,161 INFO <module> 215: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 17:13:48,161 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 17:13:48,161 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 17:13:48,162 DEBUG process_csv 38: Testing Mode: False
+2016-07-19 17:13:48,162 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 17:13:48,162 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 17:13:48,162 DEBUG process_csv 68: Attempting to Add charge: False
+2016-07-19 17:13:48,162 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:13:48,163 INFO add_adjustment 170: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:13:48,163 INFO process_csv 86: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:13:48,163 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:13:48,163 INFO add_adjustment 170: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:13:48,163 DEBUG process_csv 93: Index Count: 1
+2016-07-19 17:13:48,163 DEBUG process_csv 94: Saving current row to previous row.
+2016-07-19 17:13:48,164 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 17:13:48,164 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:13:48,164 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:13:48,164 INFO add_adjustment 170: Adding charge to: Chris Edwards tpn program 103 2016-05-03 20:00:03 UTC Invoice Group: 2
+2016-07-19 17:13:48,164 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 17:13:48,164 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:13:48,164 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:13:48,164 INFO add_adjustment 170: Adding charge to: James Wissel mtom program 104 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:13:48,165 INFO process_csv 86: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:13:48,165 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:13:48,165 INFO add_adjustment 170: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:13:48,165 DEBUG process_csv 93: Index Count: 4
+2016-07-19 17:13:48,165 DEBUG process_csv 94: Saving current row to previous row.
+2016-07-19 17:13:48,165 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 17:13:48,165 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:13:48,166 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:13:48,166 INFO add_adjustment 170: Adding charge to: Alex Winston 25 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 106
+2016-07-19 17:13:48,166 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 17:13:48,166 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:13:48,166 DEBUG add_adjustment 160: Testing mode: True, do nothing.
+2016-07-19 17:13:48,166 INFO add_adjustment 170: Adding charge to: Sam Payson 27 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 107
+2016-07-19 17:13:48,166 INFO process_csv 123: No remaining charges, Final invoice posted
+2016-07-19 17:19:04,439 INFO <module> 216: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 17:19:04,439 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 17:19:04,439 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 17:19:04,439 DEBUG process_csv 38: Testing Mode: False
+2016-07-19 17:19:04,440 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 17:19:04,440 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 17:19:04,440 DEBUG process_csv 68: Attempting to Add charge: False
+2016-07-19 17:19:04,441 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:04,441 INFO add_adjustment 171: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:19:04,441 INFO process_csv 86: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:19:04,441 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:04,441 INFO add_adjustment 171: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:19:04,441 DEBUG process_csv 93: Index Count: 1
+2016-07-19 17:19:04,441 DEBUG process_csv 94: Saving current row to previous row.
+2016-07-19 17:19:04,442 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 17:19:04,442 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:19:04,442 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:04,442 INFO add_adjustment 171: Adding charge to: Chris Edwards tpn program 103 2016-05-03 20:00:03 UTC Invoice Group: 2
+2016-07-19 17:19:04,442 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 17:19:04,442 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:19:04,442 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:04,443 INFO add_adjustment 171: Adding charge to: James Wissel mtom program 104 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:19:04,443 INFO process_csv 86: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:19:04,443 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:04,443 INFO add_adjustment 171: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:19:04,443 DEBUG process_csv 93: Index Count: 4
+2016-07-19 17:19:04,443 DEBUG process_csv 94: Saving current row to previous row.
+2016-07-19 17:19:04,443 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 17:19:04,443 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:19:04,443 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:04,444 INFO add_adjustment 171: Adding charge to: Alex Winston 25 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 106
+2016-07-19 17:19:04,444 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 17:19:04,444 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:19:04,444 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:04,444 INFO add_adjustment 171: Adding charge to: Sam Payson 27 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 107
+2016-07-19 17:19:04,444 INFO process_csv 123: No remaining charges, Final invoice posted
+2016-07-19 17:19:53,326 INFO <module> 216: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 17:19:53,326 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 17:19:53,326 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 17:19:53,327 DEBUG process_csv 38: Testing Mode: False
+2016-07-19 17:19:53,327 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 17:19:53,327 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 17:19:53,327 DEBUG process_csv 68: Attempting to Add charge: False
+2016-07-19 17:19:53,328 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:53,328 INFO add_adjustment 171: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:19:53,328 INFO process_csv 86: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:19:53,328 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:53,328 INFO add_adjustment 171: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:19:53,329 DEBUG process_csv 93: Index Count: 1
+2016-07-19 17:19:53,329 DEBUG process_csv 94: Saving current row to previous row.
+2016-07-19 17:19:53,329 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 17:19:53,329 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:19:53,329 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:53,329 INFO add_adjustment 171: Adding charge to: Chris Edwards tpn program 103 2016-05-03 20:00:03 UTC Invoice Group: 2
+2016-07-19 17:19:53,330 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 17:19:53,331 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:19:53,331 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:53,331 INFO add_adjustment 171: Adding charge to: James Wissel mtom program 104 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:19:53,332 INFO process_csv 86: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:19:53,332 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:53,332 INFO add_adjustment 171: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:19:53,332 DEBUG process_csv 93: Index Count: 4
+2016-07-19 17:19:53,332 DEBUG process_csv 94: Saving current row to previous row.
+2016-07-19 17:19:53,332 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 17:19:53,333 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:19:53,333 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:53,333 INFO add_adjustment 171: Adding charge to: Alex Winston 25 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 106
+2016-07-19 17:19:53,333 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 17:19:53,334 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:19:53,334 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:19:53,334 INFO add_adjustment 171: Adding charge to: Sam Payson 27 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 107
+2016-07-19 17:19:53,334 INFO process_csv 123: No remaining charges, Final invoice posted
+2016-07-19 17:20:35,109 INFO <module> 216: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 17:20:35,109 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 17:20:35,110 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 17:20:35,110 DEBUG process_csv 38: Testing Mode: True
+2016-07-19 17:20:35,110 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 17:20:35,110 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 17:22:08,492 INFO <module> 216: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 17:22:08,492 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 17:22:08,492 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 17:22:08,492 DEBUG process_csv 38: Testing Mode: False
+2016-07-19 17:22:08,492 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 17:22:08,493 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 17:22:36,229 INFO <module> 216: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 17:22:36,229 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 17:22:36,229 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 17:22:36,229 DEBUG process_csv 38: Testing Mode: False
+2016-07-19 17:22:36,229 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 17:22:36,230 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 17:22:36,230 DEBUG process_csv 68: Attempting to Add charge: False
+2016-07-19 17:22:36,230 DEBUG add_adjustment 148: BOOM
+2016-07-19 17:23:18,627 INFO <module> 216: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 17:23:18,628 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 17:23:18,628 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 17:23:18,628 DEBUG process_csv 38: Testing Mode: True
+2016-07-19 17:23:18,628 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 17:23:18,629 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 17:23:18,629 DEBUG process_csv 68: Attempting to Add charge: True
+2016-07-19 17:23:18,629 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:18,629 INFO add_adjustment 171: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:23:18,630 INFO process_csv 86: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:23:18,630 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:18,630 INFO add_adjustment 171: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:23:18,630 DEBUG process_csv 93: Index Count: 1
+2016-07-19 17:23:18,630 DEBUG process_csv 94: Saving current row to previous row.
+2016-07-19 17:23:18,630 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 17:23:18,630 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:23:18,630 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:18,631 INFO add_adjustment 171: Adding charge to: Chris Edwards tpn program 103 2016-05-03 20:00:03 UTC Invoice Group: 2
+2016-07-19 17:23:18,631 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 17:23:18,631 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:23:18,631 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:18,631 INFO add_adjustment 171: Adding charge to: James Wissel mtom program 104 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:23:18,632 INFO process_csv 86: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:23:18,632 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:18,632 INFO add_adjustment 171: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:23:18,632 DEBUG process_csv 93: Index Count: 4
+2016-07-19 17:23:18,632 DEBUG process_csv 94: Saving current row to previous row.
+2016-07-19 17:23:18,632 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 17:23:18,632 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:23:18,633 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:18,633 INFO add_adjustment 171: Adding charge to: Alex Winston 25 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 106
+2016-07-19 17:23:18,633 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 17:23:18,633 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:23:18,634 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:18,634 INFO add_adjustment 171: Adding charge to: Sam Payson 27 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 107
+2016-07-19 17:23:18,634 INFO process_csv 123: No remaining charges, Final invoice posted
+2016-07-19 17:23:27,322 INFO <module> 216: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 17:23:27,322 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 17:23:27,323 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 17:23:27,323 DEBUG process_csv 38: Testing Mode: True
+2016-07-19 17:23:27,323 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 17:23:27,324 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 17:23:27,324 DEBUG process_csv 68: Attempting to Add charge: True
+2016-07-19 17:23:27,324 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:27,324 INFO add_adjustment 171: Adding charge to: Rion Angeles tpn program 101 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:23:27,324 INFO process_csv 86: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:23:27,324 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:27,325 INFO add_adjustment 171: Adding charge to: Chris Wilson tpn program 102 2016-05-03 20:00:03 UTC Invoice Group: 1
+2016-07-19 17:23:27,325 DEBUG process_csv 93: Index Count: 1
+2016-07-19 17:23:27,325 DEBUG process_csv 94: Saving current row to previous row.
+2016-07-19 17:23:27,325 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 1 has posted.
+2016-07-19 17:23:27,325 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:23:27,325 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:27,325 INFO add_adjustment 171: Adding charge to: Chris Edwards tpn program 103 2016-05-03 20:00:03 UTC Invoice Group: 2
+2016-07-19 17:23:27,326 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 2 has posted.
+2016-07-19 17:23:27,326 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:23:27,326 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:27,326 INFO add_adjustment 171: Adding charge to: James Wissel mtom program 104 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:23:27,326 INFO process_csv 86: Invoice Group is still the same, and not EOF. Adding another charge to the current invoice.
+2016-07-19 17:23:27,326 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:27,326 INFO add_adjustment 171: Adding charge to: Jesse Anderson mtom program 105 2016-05-03 20:00:03 UTC Invoice Group: 3
+2016-07-19 17:23:27,326 DEBUG process_csv 93: Index Count: 4
+2016-07-19 17:23:27,327 DEBUG process_csv 94: Saving current row to previous row.
+2016-07-19 17:23:27,327 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 3 has posted.
+2016-07-19 17:23:27,327 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:23:27,327 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:27,327 INFO add_adjustment 171: Adding charge to: Alex Winston 25 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 106
+2016-07-19 17:23:27,327 INFO process_csv 103: The Invoice Program has changed. A new invoice of group 106 has posted.
+2016-07-19 17:23:27,327 DEBUG process_csv 107: Dumping the current invoice. Starting a fresh one.
+2016-07-19 17:23:27,328 DEBUG add_adjustment 161: Testing mode: True, do nothing.
+2016-07-19 17:23:27,328 INFO add_adjustment 171: Adding charge to: Sam Payson 27 mtom 2016-05-03 20:00:03 UTC program Invoice Group: 107
+2016-07-19 17:23:27,328 INFO process_csv 123: No remaining charges, Final invoice posted
+2016-07-19 17:23:55,293 INFO <module> 216: ***** Starting New Upload ***** test.csv 
+
+2016-07-19 17:23:55,293 INFO authenticate 25: Attempting to Authenticate
+2016-07-19 17:23:55,293 INFO process_csv 37: Beginning to Process CSV: test.csv
+2016-07-19 17:23:55,293 DEBUG process_csv 38: Testing Mode: False
+2016-07-19 17:23:55,294 INFO process_csv 43: CSV file opened has 7 rows to process.
+2016-07-19 17:23:55,294 DEBUG process_csv 65: Saving current row to previous row.
+2016-07-19 17:23:55,294 DEBUG process_csv 68: Attempting to Add charge: False
+2016-07-19 17:23:55,294 DEBUG add_adjustment 148: BOOM

@@ -12,6 +12,7 @@ from logging.handlers import RotatingFileHandler
 # name of csv file to be passed as argument
 csv_file = sys.argv[1]
 log_level_desired = sys.argv[2]
+testing_mode = (sys.argv[3] == 'True')
 
 # recurly specific stuff
 recurly.SUBDOMAIN = 'YOUR-SUBDOMAIN'
@@ -29,12 +30,12 @@ def authenticate():
     # Set a default currency for your API requests
     recurly.DEFAULT_CURRENCY = 'USD'
 
-def process_csv(csv_to_process = csv_file):
+def process_csv(csv_to_process = csv_file, testing_mode = testing_mode):
     '''A function that Processes the CSV file passsed as an argument using
         a DictReader'''
 
     logger.info('Beginning to Process CSV: %s' % csv_to_process)
-
+    logger.debug('Testing Mode: ' + str(testing_mode))
     # get the number of rows first
     file = open(csv_to_process)
     # subtract 1 for the header of column names
@@ -57,14 +58,16 @@ def process_csv(csv_to_process = csv_file):
                 and if it's the first record in the list'''
             if index == 0:
                 # add the current dict to the current invoice being built
+                # TODO Deprecrate this once charges are successfully applied
                 current_invoice.append(row)
                 # save the row to the previous_row variable to be used next
                 previous_row = row
-                logger.info(('Adding charge to: {} {} {} {} {} {} '
-                    'Invoice Group: {}').format(row['influencerfirstname'],
-                    row['influencerlastname'], row['customername'],
-                    row['programname'], row['amountdue'], row['postedat'],
-                    row['invoicegroup']))
+                logger.debug('Saving current row to previous row.')
+
+                # apply the charge to the account
+                logger.debug('Attempting to Add charge: ' + str(testing_mode))
+                add_adjustment(row, testing_mode)
+
             else:
                 ''' if the invoice group of the current row is the same as the
                     invoice group of the previous row then add to the current
@@ -72,40 +75,56 @@ def process_csv(csv_to_process = csv_file):
                 if row['invoicegroup'] == previous_row['invoicegroup']:
                     if (index + 1) == row_count:
                         '''eof reached. just post the invoice'''
+                        logger.info('Final Invoice Posted!')
                         # TODO post invoice
-                        print 'Final invoice posted!'
                     else:
                         '''not eof'''
+
+                        # TODO deprecate this
                         current_invoice.append(row)
-                        print ('Not eof adding another adjustment to the '
-                               'current Invoice')
-                        logger.info(('Adding charge to: {} {} {} {} {} {} '
-                            'Invoice Group: {}').format(row['influencerfirstname'],
-                            row['influencerlastname'], row['customername'],
-                            row['programname'], row['amountdue'], row['postedat'],
-                            row['invoicegroup']))
-                        print 'index: ' + str(index)
+
+                        logger.info('Invoice Group is still the same, and '
+                            'not EOF. Adding another charge to the current '
+                            'invoice.')
+
+                        # apply the charge to the account
+                        add_adjustment(row, testing_mode)
+
+                        logger.debug(('Index Count: {}').format(str(index)))
+                        logger.debug('Saving current row to previous row.')
                         previous_row = row
 
                 else:
                     ''' if the invoice group is different then just post the
                         invoice'''
                     # TODO Post Invoice
-                    print ('The invoice Program has changed. A new Invoice has '
-                            'Posted')
+                    logger.info(('The Invoice Program has changed. A new '
+                        'invoice of group {} has posted.').format(
+                            previous_row['invoicegroup']))
 
                     # empty the current invoice to start fresh
+                    # deprecate this once adjustment function is done
+                    logger.debug('Dumping the current invoice. Starting a '
+                        'fresh one.')
                     del current_invoice[:]
 
                     # then add the new row to a freshly emptied invoice
+                    # TODO Deprecate this
                     current_invoice.append(row)
+
+                    # apply the charge to the account
+                    add_adjustment(row, testing_mode)
+
                     print 'A new Invoice has been created'
 
                     if (index + 1) == row_count:
                         ''' Eof reached. Just post the invoice'''
                         # TODO post invoice
-                        print 'No remaining adjustments. Final invoice posted!'
-                        print current_invoice
+                        logger.info('No remaining charges, Final invoice '
+                            'posted')
+
+                        # possibly add this to log file
+                        # print current_invoice
                     else:
                         ''' It's not the eof and there's more adjustments to
                             add'''
@@ -115,7 +134,6 @@ def process_csv(csv_to_process = csv_file):
                         previous_row = row
 
 def retrieve_account(account_code):
-    # TODO retrieve account
     try:
       account = Account.get(account_code)
       return account
@@ -123,18 +141,34 @@ def retrieve_account(account_code):
       logger.warning(('Account Not Found: {}').format(row['customername']))
       return False
 
-def add_adjustment(account, description, unit_amount_in_cents, quantity,
-    accounting_code, tax_exempt):
+def add_adjustment(charge, testing):
     ''' a function that adds charges to accounts'''
-    charge = Adjustment(
-      description = description,
-      unit_amount_in_cents = unit_amount_in_cents,
-      currency = 'USD',
-      quantity = quantity,
-      accounting_code = accounting_code,
-      tax_exempt = tax_exempt)
+    print type(testing)
+    if testing == False:
+        logger.debug('BOOM')
+        charge = Adjustment(
+          description = charge['programname'],
+          unit_amount_in_cents = (charge['amountdue'] * 100),
+          currency = 'USD',
+          quantity = 1,
+          accounting_code = None,
+          tax_exempt = False)
+          # start_date = start_date
+          # end_date = end_date
+        account.charge(charge)
 
-    account.charge(charge)
+    else:
+        logger.debug('Testing mode: True, do nothing.')
+
+    logger.info(('Adding charge to: {} {} {} {} {} {} '
+        'Invoice Group: {}').format(
+        charge['influencerfirstname'],
+        charge['influencerlastname'],
+        charge['customername'],
+        charge['programname'],
+        charge['amountdue'],
+        charge['postedat'],
+        charge['invoicegroup']))
 
 def post_invoice(account, terms_and_conditions = None, customer_notes = None,
     collection_method = 'automatic', net_terms = 30, po_number = None):
@@ -179,6 +213,6 @@ def initiate_logging(log_level = log_level_desired):
 
 if __name__ == "__main__":
     initiate_logging()
-    logger.info('***** Starting New Upload ***** %s' % csv_file)
+    logger.info('***** Starting New Upload ***** %s \n' % csv_file)
     authenticate()
     process_csv()
